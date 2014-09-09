@@ -14,6 +14,13 @@ process.stdin.on('end', function () {
     stdout.write(run(input) + '\n');
 });
 
-run = function () {
+run = function (input) {
+    var lines = input.split('\n'),
+        n = lines[0];
 
+    lines.forEach(function (number, index) {
+        if (index === 0) {
+            return;
+        }
+    });
 };

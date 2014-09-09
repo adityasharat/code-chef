@@ -4,7 +4,7 @@ var i = 0;
 process.stdin.on('data', function (chunk) {
     var lines = chunk.toString().split('\n'),
         input = lines[0].split(' '),
-        n = parseInt(input[0], 10),
+        //n = parseInt(input[0], 10),
         k = parseInt(input[1], 10);
 
     lines.forEach(function (num, index) {
@@ -15,11 +15,9 @@ process.stdin.on('data', function (chunk) {
             i++;
         }
     });
-    process.stdout.write(i + "\n");
-    process.exit();
 });
 
 process.stdin.on('end', function () {
     process.stdout.write(i + "\n");
     process.exit();
-})
+});

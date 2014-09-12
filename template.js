@@ -14,6 +14,6 @@ process.stdin.on('end', function () {
     stdout.write(run(input) + '\n');
 });
 
-run = function () {
+run = function (input) {
 
 };
